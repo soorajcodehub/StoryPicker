@@ -1,0 +1,16 @@
+﻿@model Core.Domain.StoryPost
+
+@{
+    ViewBag.Title = "Create Story";
+}
+
+<h2>Create Story</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+
+    <p>
+        <input type="submit" value="Create" />
+    </p>
+}

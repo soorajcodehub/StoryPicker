@@ -1,0 +1,11 @@
+﻿@model IList<String>
+
+<h2>ViewStoryTitles</h2>
+@foreach (var item in Model)
+{
+    <p>
+        <h1>
+            @Html.ActionLink(item,"ViewStories")
+        </h1>
+    </p>
+}

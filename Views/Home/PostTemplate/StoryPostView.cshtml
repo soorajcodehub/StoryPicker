@@ -1,0 +1,33 @@
+﻿@model StoryPicker.Core.StoryPost
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>StoryPostView</title>
+</head>
+<body>
+    <div>
+        <p>
+            @Model.Author
+        </p>
+        <p>
+            @Model.Date
+        </p>
+        <p>
+            @Model.Title
+        </p>
+        <p>
+            @Model.Summary;
+        </p>
+        <p>
+          @Model.Details
+        </p>
+    </div>
+</body>
+</html>
